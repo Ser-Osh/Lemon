@@ -81,6 +81,10 @@ body {
     vertical-align: sub;
 }
 
+.header-nav .nav-open {
+    display: none;
+}
+
 .container {
     width: 1170px;
     height: 100%;
@@ -256,7 +260,6 @@ body {
 }
 
 .item-img {
-
     width: 60px;
     height: 60px;
     margin: 0 auto 35px;
@@ -322,3 +325,28 @@ body {
 .competence-item:hover p {
     color: #FFF;
 }
+
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+/* start commented backslash hack \*/
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
+
+/* close commented backslash hack */
